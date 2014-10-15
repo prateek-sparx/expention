@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+           id="com.criticalthinking.riddlerabbitprek"  version="0.1.0" >
+    <name>AudioPlayPlugIn</name>
+    <description>Audio Plugin</description>
+    <license>Apache 2.0 License</license>
+    <keywords>audio</keywords>
+ 
+    <js-module src="www/assets/js/audios.js" name="AudioPlayPlugIn">
+        <clobbers target="window.audios" />
+    </js-module>
+ 
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="AudioPlayPlugIn">
+                <param name="android-package" value="com.criticalthinking.riddlerabbitprek.AudioPlayPlugIn"/>
+            </feature>
+        </config-file>
+ 
+        <source-file src="src/AudioPlayPlugIn.java" target-dir="src/com/criticalthinking/riddlerabbitprek" />
+     </platform>
+</plugin>
