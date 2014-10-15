@@ -1,21 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
  
 <plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+<<<<<<< HEAD
            id="com.criticalthinking.riddlerabbitprek"  version="0.1.0" >
     <name>AudioPlayPlugIn</name>
+=======
+           id="com.criticalthinking.riddlerabbitprek
+    <name>AudioPlayPlugin</name>
+>>>>>>> 72c20c7c27744791e4479c0a81caf8e1c4553078
     <description>Audio Plugin</description>
     <license>Apache 2.0 License</license>
     <keywords>audio</keywords>
  
+<<<<<<< HEAD
     <js-module src="www/assets/js/audios.js" name="AudioPlayPlugIn">
+=======
+    <js-module src="www/assets/js/audios.js" name="AudioPlayPlugin">
+>>>>>>> 72c20c7c27744791e4479c0a81caf8e1c4553078
         <clobbers target="window.audios" />
     </js-module>
  
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
+<<<<<<< HEAD
             <feature name="AudioPlayPlugIn">
                 <param name="android-package" value="com.criticalthinking.riddlerabbitprek.AudioPlayPlugIn"/>
+=======
+            <feature name="AudioPlayPlugin">
+                <param name="android-package" value="com.criticalthinking.riddlerabbitprek.AudioPlayPlugin"/>
+>>>>>>> 72c20c7c27744791e4479c0a81caf8e1c4553078
             </feature>
         </config-file>
  
